@@ -1,137 +1,33 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; 
+.forms-group > label {
+    display: block;
+    
+   
 }
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; 
-}
-
-body {
-  font-family: "Nunito", sans-serif;
-  color: #333;
-  font-weight: 300;
-  line-height: 1.6; 
-  background-color:rgb(177, 228, 228)
-
-}
-
 .container {
- 
-  margin-inline: auto;
- 
+    border: 10px;
+    background-color: rgba(235, 225, 225, 0.445);
+}
+.container > div {
+    width: 250px;
+    border: 2px solid rgb(141, 136, 136);
+    height: 550px;
+    margin-inline: auto;
+    padding: 15px;
+    background-color: white;
 }
 
-@media screen and (min-width: 576px) {
-.container {
-  width: 576px;
-  background-color: burlywood;
-
+.container > div button {
+    width: 70%;
+    height: 40px
 }
+button {
+    background-color: wheat ;
+    
+
+animation-name: შესვლა;
+animation-duration: 8s;
 }
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  background-color: brown;
-  }
-  }
-
-  @media screen and (min-width: 992px) {
-    .container {
-      width: 992px;
-    background-color: rgb(146, 197, 231);
-    }
-    }
-    @media screen and (min-width: 992px) {
-    .body {
-      background-color: red;
-    }
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
-  grid-gap: 1.5rem; 
- 
-}
-
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block; 
-  border-radius: 1.5%;
- 
-}
-
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 2;  */
-  /* grid-row: 1 / span 2; */
-}
-
-.gallery__item--2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  
-
-  /** Alternative Syntax **/
-  /* grid-column: 3 / span 2;  */
-  /* grid-row: 1 / span 2; */
-}
-
-.gallery__item--3 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 6;
-
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
-}
-
-.gallery__item--4 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 6;
-
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 4;  */
-  /* grid-row: 3 / span 3; */
-}
-
-.gallery__item--5 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 6;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 4; */
-  /* grid-row: 6 / span 3; */
-}
-
-.gallery__item--6 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 6;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4; */
-  /* grid-row: 6 / span 3; */
+@keyframes შესვლა {
+from {background-color: blue;}
+to {background-color: rgb(9, 255, 0);}
 }
